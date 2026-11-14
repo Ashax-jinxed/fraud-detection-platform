@@ -1,0 +1,60 @@
+# ==========================================================
+# Fraud Detection Platform - Python dependencies
+# Organised by stage. Only Stage A is active now.
+# When you reach a later stage, uncomment its block and run:
+#   pip install -r requirements.txt
+# Exact versions are saved in requirements-lock.txt (step A2).
+# ==========================================================
+
+# ----------------------------------------------------------
+# STAGE A - Validate the model (local)
+# ----------------------------------------------------------
+# NOTE: install torch BEFORE this file, using the CPU build (see step A2).
+pandas              # tables in memory
+numpy               # numeric arrays
+pyarrow             # read and write Parquet files
+matplotlib          # charts
+jupyterlab          # notebooks for exploration
+scikit-learn        # metrics, scaler, logistic regression baseline
+xgboost             # fraud classifier (version 2.0 or newer)
+torch               # PyTorch autoencoder for anomalies
+mlflow              # experiment tracking and model registry (local)
+pytest              # tests
+ruff                # linting
+
+# ----------------------------------------------------------
+# STAGE B - Real ETL (uncomment when you reach it)
+# ----------------------------------------------------------
+# python-dotenv                # reads secrets from the .env file
+# confluent-kafka              # Kafka producer and consumer
+# pyspark                      # Spark Structured Streaming (needs Java 17)
+# snowflake-connector-python   # connect to Snowflake from Python
+# dbt-core
+# dbt-snowflake
+
+# ----------------------------------------------------------
+# STAGE C - Model in production (uncomment when you reach it)
+# ----------------------------------------------------------
+# apache-airflow is installed inside its Docker image using the
+# official constraints file, NOT from this file.
+# fastapi
+# uvicorn
+# pydantic
+# anthropic                    # Claude API
+# langgraph                    # agent as a state graph
+# langchain-anthropic
+# sentence-transformers        # embeddings for pgvector
+# psycopg2-binary              # Postgres driver
+# pgvector                     # pgvector helpers for Python
+
+# ----------------------------------------------------------
+# STAGE D - Monitoring and dashboard (uncomment when you reach it)
+# ----------------------------------------------------------
+# evidently                    # data drift reports
+# prometheus-client            # metrics exposed by the API
+# streamlit
+
+# ----------------------------------------------------------
+# STAGE E - Delivery (uncomment when you reach it)
+# ----------------------------------------------------------
+# boto3                        # AWS SDK (S3)

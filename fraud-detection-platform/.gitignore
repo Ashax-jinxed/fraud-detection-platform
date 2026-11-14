@@ -1,0 +1,15 @@
+.env
+data/
+__pycache__/
+*.pyc
+.venv/
+mlruns/
+mlflow.db
+*.tfstate*
+.terraform/
+target/
+logs/
+models/
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
